@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace crashapi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Api |This is my first api project|
+            System.Console.WriteLine("What is the api key?");
+            string Apicheck = Console.ReadLine();
+            string ApiKey = "NightSky";
+            //use console.clear(); after you make api thing
+;            if (Apicheck == ApiKey)
+            {
+                Console.WriteLine("this is working");
+                Thread.Sleep(200);
+                Console.WriteLine("Starting...");
+                Thread.Sleep(1000);
+                Random random = new Random();
+                byte randomv2 = (byte)random.Next(0,41);
+                Console.WriteLine("The Multiplier is "+ randomv2 +"x");
+                Console.WriteLine("Do You Want to clear program?(this will clear not restart !)");
+                string Reset= Console.ReadLine();
+
+                if (Reset == "yes")
+                {
+                    Console.Clear();
+                }
+                else
+                {
+                    Console.WriteLine("goodbye :)");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Not The Password you can't use this api");
+            }
+            
+        }
+    }
+}
