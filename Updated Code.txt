@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Code_detect
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to my program Input code");
+            string[] strs = { "Console.WriteLine();", "cw", "cmd.edit", "NightSkyCode.edit", "Panel.edit(18)","Redirect (58)","Malware Api.run" ,"Jup Code.com.cm.js.ml.gq.cs","Coming Soon "};
+           
+            
+            var check = Console.ReadLine();
+            
+            if (strs.Contains(check))
+            {
+                Console.WriteLine("These Operators are banned. This Code is Working Correctly :)");
+            }
+            else
+            {
+                Console.WriteLine("This code or text, which is used to activate |code detector| is not valid or cannot be used or processed by the system, if you see this message please notify me on gitub. I will add your code to the processing.");
+            }
+        }
+    }
+}
